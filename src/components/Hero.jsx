@@ -93,13 +93,13 @@ export default function Hero() {
           variants={scaleIn}
           transition={{ ...transition, delay: 0.18 }}
         >
-          <div className="quiet-panel relative overflow-hidden rounded-[2rem] p-7">
+          <div className="quiet-panel relative overflow-hidden rounded-[2rem] p-4 sm:p-7">
             <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-violet-500/12 to-transparent" />
-            <div className="relative rounded-[1.6rem] border border-white/10 bg-ink-950/72 p-8">
+            <div className="relative rounded-[1.6rem] border border-white/10 bg-ink-950/72 p-5 sm:p-8">
               <img
                 src={logo}
                 alt="Raxi Game logo for app download and registration"
-                className="mx-auto mb-8 w-full max-w-[390px]"
+                className="mx-auto mb-6 w-full max-w-[390px] sm:mb-8"
                 width="1280"
                 height="449"
                 loading="eager"
@@ -109,12 +109,12 @@ export default function Hero() {
               <div className="grid gap-3">
                 <div className="rounded-2xl border border-white/8 bg-white/[0.035] p-4">
                   <p className="text-xs uppercase tracking-[0.22em] text-zinc-500">Raxi App</p>
-                  <p className="mt-2 text-2xl font-semibold text-white">Register Download</p>
+                  <p className="mt-2 text-xl font-semibold text-white sm:text-2xl">Register Download</p>
                 </div>
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-3 gap-2 sm:gap-3">
                   {["Wingo", "K3", "Aviator"].map((game) => (
-                    <div key={game} className="rounded-2xl border border-white/8 bg-white/[0.035] p-4 text-center">
-                      <p className="text-sm font-semibold text-white">{game}</p>
+                    <div key={game} className="min-w-0 rounded-2xl border border-white/8 bg-white/[0.035] px-2 py-4 text-center sm:p-4">
+                      <p className="whitespace-nowrap text-xs font-semibold leading-none text-white sm:text-sm">{game}</p>
                     </div>
                   ))}
                 </div>
