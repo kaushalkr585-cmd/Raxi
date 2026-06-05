@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://raxi.game/sitemap.xml
+Sitemap: https://raxigames.online/sitemap.xml
