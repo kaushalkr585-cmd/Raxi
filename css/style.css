@@ -159,26 +159,24 @@ textarea {
 }
 
 .nav-links {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 6px;
-  overflow-x: auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  scrollbar-width: none;
-}
-
-.nav-links::-webkit-scrollbar {
-  display: none;
 }
 
 .nav-links a {
-  flex: 0 0 auto;
-  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 8px 6px;
   border-radius: 999px;
   color: var(--text);
   font-size: 0.92rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .nav-links a:focus-visible,
@@ -739,10 +737,13 @@ p {
   }
 
   .nav-links {
+    display: flex;
+    justify-content: center;
     gap: 20px;
   }
 
   .nav-links a {
+    min-height: auto;
     padding-inline: 16px;
   }
 
