@@ -162,6 +162,8 @@ textarea {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 6px;
+  width: min(100% - 24px, var(--container));
+  max-width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -182,6 +184,17 @@ textarea {
 .nav-links a:focus-visible,
 .nav-links a:active {
   color: var(--primary);
+}
+
+@media (max-width: 599px) {
+  .main-nav {
+    overflow: visible;
+  }
+
+  .nav-links {
+    margin-inline: auto;
+    overflow: visible;
+  }
 }
 
 .hero {
@@ -739,6 +752,7 @@ p {
   .nav-links {
     display: flex;
     justify-content: center;
+    width: min(100% - 48px, var(--container));
     gap: 20px;
   }
 
