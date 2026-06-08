@@ -270,6 +270,30 @@ p {
   font-size: 1.04rem;
 }
 
+.responsible-gaming-note {
+  margin-top: 20px;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.responsible-gaming-title {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.responsible-gaming-tips {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 22px;
+  color: var(--muted);
+}
+
+.responsible-gaming-tips li::marker {
+  color: var(--primary);
+}
+
 .primary-cta {
   min-width: 190px;
   margin-top: 12px;
