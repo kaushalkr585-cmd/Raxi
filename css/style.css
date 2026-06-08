@@ -464,6 +464,24 @@ p {
   color: var(--muted);
 }
 
+.redemption-steps {
+  display: grid;
+  gap: 14px;
+  max-width: 820px;
+  margin: 0;
+  padding-left: 28px;
+  color: var(--muted);
+}
+
+.redemption-steps li {
+  padding-left: 6px;
+}
+
+.redemption-steps li::marker {
+  color: var(--primary);
+  font-weight: 800;
+}
+
 .update-date {
   margin-bottom: 8px;
   color: var(--primary);
